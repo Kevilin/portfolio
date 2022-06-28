@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
+      <Stack flexWrap="wrap" direction="row" as="footer" alignItems="center" justifyContent="space-between" bg="brand.footerbg">
+        <StackDivider p={1} />
+        <Stack direction="row" spacing={5} color="brand.btn">
+          <Link to="/portfolio">Inicio</Link>
+          <Link to="/portfolio/add">Admin</Link>
+        </Stack>
+      </Stack>
       <Text textAlign="center" fontSize=".9rem" p={3} bg="brand.footerbg" color="brand.bg">
         Desenvolvido por{" "}
         <Box
