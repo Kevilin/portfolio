@@ -5,7 +5,7 @@
 ### `npm install`
 ### `npm start`
 
-Será inicializado em: [http://localhost:3000](http://localhost:3000) .
+Será inicializado em: [http://localhost:3000](http://localhost:3000) . 
 
 <div style="display: inline_block"><br>
 <h3>Tecnologias utilizadas no projeto: </h3>
