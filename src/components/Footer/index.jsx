@@ -9,7 +9,7 @@ const Footer = () => {
         <StackDivider p={1} />
         <Stack direction="row" spacing={5} color="brand.btn">
           <Link to="/portfolio">Inicio</Link>
-          <Link to="/portfolio/add">Admin</Link>
+          <Link style={{ color: '#23292A' }} to="/portfolio/add">Admin</Link>
         </Stack>
       </Stack>
       <Text textAlign="center" fontSize=".9rem" p={3} bg="brand.footerbg" color="brand.bg">
