@@ -24,7 +24,7 @@ const Posts = () => {
         </Box>
         {/* Filtrar */}
         <Stack direction="row" flexWrap="wrap" justifyContent="center">
-          <Grid templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(2, 1fr)" }} gap={16}>
+          <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(2, 1fr)" }} gap={16}>
             {data.length === 0 ? (
               <Center w="100%">
                 <Spinner size="xl" color="brand.btn" m="0 auto" />
