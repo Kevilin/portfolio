@@ -12,16 +12,16 @@ const Cards = ({ post }) => {
 
   return (
     <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1, y: -10 }}>
-      <Box maxW="sm" borderRadius="xl" w={{ base: "100%", md: "23rem" }} p={4} bg="brand.bg" overflow="hidden" minH="25rem" boxShadow="xl">
+      <Box maxW="sm" borderRadius="xl" w={{ base: "100%", md: "23rem" }} p={4} bg="brand.bg" overflow="hidden" minH="25rem" minW="42rem" boxShadow="xl">
 
-        <Box overflow="hidden" rounded="20px" maxHeight="20rem">
+        <Box maxW="xl" minW="40rem" overflow="hidden" rounded="20px" maxHeight="20rem">
           <Image
             src={url_imagem.length === 0 ? null : url_imagem[0].url_imagem}
             alt={url_imagem.length === 0 ? null : url_imagem[0].imageData}
             borderRadius="sm"
             loading="lazy"
-            w="100%"
             h="30vh"
+            w="100%"
             objectFit="cover"
             style={{ scale: "1", transition: "0.5s ease-in-out" }}
             _hover={{ transform: "scale(1.1)" }}

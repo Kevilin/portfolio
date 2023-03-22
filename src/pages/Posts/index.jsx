@@ -15,16 +15,16 @@ const Posts = () => {
     //eslint-disable-next-line
   }, []);
   return (
-    <Stack bg="#EAECEB" >
+    <Stack bg="#2E2E2E" >
       <Box minHeight="100vh" mb={20}>
-        <Box bg="brand.alojadoresbg" p={10} mb={10}>
+        <Box bg="#6fbbd3" p={10} mb={10}>
           <Text as="h1" fontSize={{ base: "1.5rem", md: "2.5rem" }} color="brand.text" textAlign="center" fontWeight="700" lineHeight="1.2">
             Portfólio 💻
           </Text>
         </Box>
         {/* Filtrar */}
         <Stack direction="row" flexWrap="wrap" justifyContent="center">
-          <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(3, 1fr)" }} gap={16}>
+          <Grid templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(2, 1fr)" }} gap={16}>
             {data.length === 0 ? (
               <Center w="100%">
                 <Spinner size="xl" color="brand.btn" m="0 auto" />
