@@ -2,17 +2,15 @@ import React from "react";
 import { useEffect } from "react";
 import { Stack, Text, Grid, Box, Spinner, Center} from "@chakra-ui/react";
 import { nanoid } from "nanoid";
-//Data desde Host
 import { GetData } from "../Home/Hosts/Host.logical";
 import Cards from "../../components/Cards";
 
 const Posts = () => {
   const { getDataFirebase, data } = GetData();
-  //Call data to Firebase
+
   useEffect(() => {
     getDataFirebase();
     window.scrollTo({ top: 0 });
-    //eslint-disable-next-line
   }, []);
   return (
     <Stack bg="#2E2E2E" >
