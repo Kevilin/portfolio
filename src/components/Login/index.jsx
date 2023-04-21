@@ -38,7 +38,7 @@ const Login = () => {
             <span className="login-form-title">Acesso Admin</span>
             <br></br>
             <div className="wrap-input">
-              <span>E-mail</span>
+              <span className="spanLogin">E-mail</span>
               <input
                 className={email !== "" ? "has-val input" : "input"}
                 type="email"
@@ -48,7 +48,7 @@ const Login = () => {
             </div>
 
             <div className="wrap-input">
-            <span>Senha</span>
+            <span className="spanLogin">Senha</span>
               <input
                 className={password !== "" ? "has-val input" : "input"}
                 type="password"
