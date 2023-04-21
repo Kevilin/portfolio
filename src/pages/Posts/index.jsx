@@ -16,7 +16,7 @@ const Posts = () => {
     <Stack bg="#2E2E2E" >
       <Box minHeight="100vh" mb={20}>
         <Box bg="#6fbbd3" p={10} mb={10}>
-          <Text as="h1" fontSize={{ base: "1.5rem", md: "2.5rem" }} color="brand.text" textAlign="center" fontWeight="700" lineHeight="1.2">
+          <Text as="h1" fontSize={{ base: "1.5rem", md: "2.5rem" }} color="brand.text" textAlign="center" fontWeight="700" lineHeight="0.5">
             Portfólio 💻
           </Text>
         </Box>
