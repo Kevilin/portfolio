@@ -20,18 +20,18 @@ const Posts = () => {
             Portfólio 💻
           </Text>
         </Box>
-        {/* Filtrar */}
-        <Stack direction="row" flexWrap="wrap" justifyContent="center">
-          <Grid templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)", xl: "repeat(2, 1fr)" }} gap={16}>
-            {data.length === 0 ? (
-              <Center w="100%">
-                <Spinner size="xl" color="brand.btn" m="0 auto" />
-              </Center>
-            ) : (
-              data.map((post) => {
-                return <Cards key={nanoid()} post={post} />;
-              })
-            )}
+        <Stack direction="row" flexWrap="wrap" p={2} justifyContent="center" m={8}>
+          <Grid
+            templateColumns={{
+              base: "repeat(1, 1fr)",
+              md: "repeat(2, 1fr)",
+              xl: "repeat(2, 1fr)",
+            }}
+            gap={8}
+          >
+            {data.map((post) => {
+              return <Cards key={nanoid()} post={post} width="100%" />;
+            })}
           </Grid>
         </Stack>
       </Box>
@@ -40,3 +40,4 @@ const Posts = () => {
 };
 
 export default Posts;
+

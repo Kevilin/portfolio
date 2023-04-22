@@ -21,19 +21,16 @@ const Cards = ({ post }) => {
   return (
     <MotionBox initial={{ opacity: 0 }} animate={{ opacity: 1, y: -10 }}>
       <Box
-        maxW="sm"
         borderRadius="xl"
-        w={{ base: "100%", md: "100%" }}
+        w="100%"
         p={4}
         bg="brand.bg"
         overflow="hidden"
-        minH="25rem"
-        minW="42rem"
         boxShadow="xl"
       >
         <Box
-          maxW="xl"
-          minW="40rem"
+          maxW="100%"
+          minW="0"
           overflow="hidden"
           rounded="20px"
           maxHeight="20rem"
@@ -43,7 +40,6 @@ const Cards = ({ post }) => {
             alt={url_imagem.length === 0 ? null : url_imagem[0].imageData}
             borderRadius="sm"
             loading="lazy"
-            h="30vh"
             w="100%"
             objectFit="cover"
             style={{ scale: "1", transition: "0.5s ease-in-out" }}
@@ -51,8 +47,8 @@ const Cards = ({ post }) => {
             rounded="10px"
           />
         </Box>
-        <Text m=".5rem 0" as="h4" fontSize="xl" fontWeight="600" w="20rem">
-          Projeto: {projeto}
+        <Text m=".5rem 0" as="h4" fontSize="md" fontWeight="600" isTruncated>
+          {projeto}
         </Text>
         <HStack color="gray" fontSize="sm">
           <span role="img">
