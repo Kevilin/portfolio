@@ -15,18 +15,9 @@ const Login = () => {
     setError("");
     try {
       await logIn(email, password);
-      navigate("/portfolio/");
+      navigate("/portfolio/add");
     } catch (err) {
       setError(err.message);
-    }
-  };
-  const handleGoogleSignIn = async (e) => {
-    e.preventDefault();
-    try {
-      await googleSignIn();
-      navigate("/portfolio/");
-    } catch (error) {
-      console.log(error.message);
     }
   };
 
